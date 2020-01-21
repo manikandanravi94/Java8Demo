@@ -1,3 +1,5 @@
+package lambdaExpression;
+
 /**
  * Created by gbs05347 on 20-01-2020.
  */
@@ -15,7 +17,7 @@ public class MathsCalculator {
         MathsCalculator calc = new MathsCalculator();
         Operation op = new Addition();
         calc.calculate(op);
-        Operation<Integer> op1 = ( a,  b)->{return a+b;};
+        Operation<Integer> op1 = (a, b)->{return a+b;};
         calc.calculate(op1);
     }
 }
