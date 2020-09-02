@@ -4,6 +4,7 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
+import java.util.stream.Stream;
 
 /**
  * Created by gbs05347 on 21-01-2020.
@@ -40,6 +41,9 @@ public class PassingFunctionalityB4Java8 {
                 return b;
             }
         });
+//        Stream<Person> peopleStream = people.stream();
+//        peopleStream.filter(person ->person.getLastName().startsWith("g")).forEach(System.out::println);
+//        peopleStream.close();
     }
 
     public void printConditionally(List<Person> people, Condition condition){

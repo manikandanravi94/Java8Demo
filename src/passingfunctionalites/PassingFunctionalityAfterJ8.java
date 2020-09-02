@@ -15,9 +15,7 @@ public class PassingFunctionalityAfterJ8 {
             new Person("madhav","gopal",29));
 
     public static void main(String[] args) {
-        Collections.sort(people, (obj1,obj2)->{
-            return obj1.getLastName().compareTo(obj2.getLastName());
-        });
+        Collections.sort(people, Comparator.comparing(Person::getLastName));
         System.out.println("printing after arranging everything based on last name");
         PassingFunctionalityB4Java8 pass= new PassingFunctionalityB4Java8();
         pass.printConditionally(people, p->true);
